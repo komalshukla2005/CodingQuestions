@@ -22,10 +22,10 @@ console.log(printFactorial(1))
 // Write a function that takes a string and returns if the string is a palindrome.
 function checkString(word) {
     if (word.length <= 1) {
-        return true;
+        return 'Palindrome';
     }
     if (word[0] !== word[word.length - 1]) {
-        return false;
+        return 'not Palindrome';
     }
     return checkString(word.substring(1, word.length - 1));
 }
