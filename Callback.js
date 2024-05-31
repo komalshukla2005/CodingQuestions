@@ -42,89 +42,89 @@
 // visitingHotel();
 
 // write callBackFunction function for AtM card;
-function firstProcess(giveMe) {
-    setTimeout(() => {
-        console.log("please wait some time after that you will be able to enter your pin");
-        giveMe()
-    }, 5000);
-}
-
-function enterPin(giveMe) {
-    setTimeout(() => {
-        console.log("Please Enter your Pin");
-        giveMe();
-    }, 2000);
-}
-
-function withDrawMoney(giveMe) {
-    setTimeout(() => {
-        console.log("Now your money is withdrawing");
-        giveMe();
-    }, 5000);
-}
-
-function collectYourCash(giveMe) {
-    setTimeout(() => {
-        console.log("Here is your cash please collect your cash");
-        giveMe();
-    }, 1000);
-}
-
-function leaveAtm() {
-    console.log("Now you can leave the atm because your all process has completed");
-}
-
-function atmMoney() {
-    console.log('Entering to the ATM');
-    console.log("Please Insert Your card");
-
-    firstProcess(() => {
-        enterPin(() => {
-            withDrawMoney(() => {
-                collectYourCash(() => {
-                    leaveAtm();
-                });
-            });
-        });
-    });
-}
-
-atmMoney();
-
-// function firstProcess() {
+// function firstProcess(giveMe) {
 //     setTimeout(() => {
 //         console.log("please wait some time after that you will be able to enter your pin");
-//         enterPin();
+//         giveMe()
 //     }, 5000);
 // }
 
-// function enterPin() {
+// function enterPin(giveMe) {
 //     setTimeout(() => {
 //         console.log("Please Enter your Pin");
-//         withDrawMoney(); 
+//         giveMe();
 //     }, 2000);
 // }
 
-// function withDrawMoney() {
+// function withDrawMoney(giveMe) {
 //     setTimeout(() => {
 //         console.log("Now your money is withdrawing");
-//         collectYourCash(); 
+//         giveMe();
 //     }, 5000);
 // }
 
-// function collectYourCash() {
+// function collectYourCash(giveMe) {
 //     setTimeout(() => {
 //         console.log("Here is your cash please collect your cash");
-//         leaveAtm(); 
+//         giveMe();
 //     }, 1000);
 // }
+
 // function leaveAtm() {
 //     console.log("Now you can leave the atm because your all process has completed");
 // }
+
 // function atmMoney() {
 //     console.log('Entering to the ATM');
 //     console.log("Please Insert Your card");
 
-//     firstProcess();
+//     firstProcess(() => {
+//         enterPin(() => {
+//             withDrawMoney(() => {
+//                 collectYourCash(() => {
+//                     leaveAtm();
+//                 });
+//             });
+//         });
+//     });
 // }
+
 // atmMoney();
+
+function firstProcess() {
+    setTimeout(() => {
+        console.log("please wait some time after that you will be able to enter your pin");
+        enterPin();
+    }, 5000);
+}
+
+function enterPin() {
+    setTimeout(() => {
+        console.log("Please Enter your Pin");
+        withDrawMoney(); 
+    }, 2000);
+}
+
+function withDrawMoney() {
+    setTimeout(() => {
+        console.log("Now your money is withdrawing");
+        collectYourCash(); 
+    }, 5000);
+}
+
+function collectYourCash() {
+    setTimeout(() => {
+        console.log("Here is your cash please collect your cash");
+        leaveAtm(); 
+    }, 1000);
+}
+function leaveAtm() {
+    console.log("Now you can leave the atm because your all process has completed");
+}
+function atmMoney() {
+    console.log('Entering to the ATM');
+    console.log("Please Insert Your card");
+
+    firstProcess();
+}
+atmMoney();
