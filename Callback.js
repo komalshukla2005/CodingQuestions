@@ -124,7 +124,6 @@ function leaveAtm() {
 function atmMoney() {
     console.log('Entering to the ATM');
     console.log("Please Insert Your card");
-
     firstProcess();
 }
 atmMoney();

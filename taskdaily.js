@@ -205,9 +205,6 @@ task()
      })
   })
 })
-.then((massage)=>{
-  console.log(massage)
-})
 .catch((error)=>{
   console.log("the error is that :",error)
 })
